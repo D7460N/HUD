@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "wooodhead.disable-eslint-rule",
+    "ghmcadams.lintlens",
+    "dbaeumer.vscode-eslint"
+  ]
+}
