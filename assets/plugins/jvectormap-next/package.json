@@ -30,7 +30,7 @@
     "jquery": ">=1.7"
   },
   "devDependencies": {
-    "uglify-js": "^2.4.10"
+    "uglify-js": "^3.19.3"
   },
   "gitHead": "595027bb0a369965cdb46e0bdde408ad4c21896e"
 }
