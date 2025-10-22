@@ -1,0 +1,30 @@
+name: Generate Architecture Diagrams
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-diagrams:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Generate Architecture Diagrams
+      uses: samjhill/diagrammer@v1.4.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        output_path: 'docs/architecture'
+        languages: 'javascript,typescript,python'
+        auto_commit: 'true'
