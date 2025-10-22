@@ -5,8 +5,6 @@ analysis:
     - javascript
     - typescript
     - python
-    - css
-    - html
 
 diagram:
   maxNodesPerDiagram: 30    # Maximum components per diagram
