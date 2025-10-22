@@ -1,2 +1,0 @@
-- name: Architecture Diagram Generator
-  uses: samjhill/diagrammer@v1.4.0
