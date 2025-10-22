@@ -1,0 +1,14 @@
+analysis:
+  includeTests: false        # Exclude test files from analysis
+  maxDepth: 3               # Maximum directory depth to analyze
+  languages:                # Supported languages
+    - javascript
+    - typescript
+    - python
+    - css
+    - html
+
+diagram:
+  maxNodesPerDiagram: 30    # Maximum components per diagram
+  maxDependenciesPerDiagram: 50  # Maximum dependencies per diagram
+  excludeInternalMethods: true   # Exclude internal implementation details
